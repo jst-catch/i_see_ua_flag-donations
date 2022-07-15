@@ -1,0 +1,132 @@
+
+@font-face {
+  font-family: 'Helvetica';
+  src: local('Helvetica Bold'), local('Helvetica-Bold'),
+  url('/fonts/Helvetica-Bold.woff2') format('woff2'),
+  url('/fonts/Helvetica-Bold.woff') format('woff'),
+  url('/fonts/Helvetica-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+
+}
+body{
+  background-color: #000;
+
+}
+.title{
+  font-size: 24px;
+  margin-bottom: 15px;
+
+}
+.button{
+  display: block;
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(51, 51, 51);
+  width: 100%;
+  line-height: 45px;
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+  &:active{
+    border: blue;
+  }
+}
+.line{
+  background-color: #333;
+  height: 3px;
+  width: 100%;
+  border-radius: 2px;
+  margin-bottom: 15px;
+}
+
+
+.container{
+  max-width: 767px;
+  padding: 16px;
+  margin: 0 auto;
+  background-color: black;
+  .header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    .iseeua-logo{
+      height: 35px;
+    }
+    .header__logo {
+      height: 40px;
+    }
+  }
+  .title-img{
+    display: block;
+    width: 100%;
+    border-radius: 20px;
+    margin-bottom: 15px;
+  }
+  .text{
+    margin-bottom: 15px;
+
+
+  }
+  .swiper{
+    .swiper {
+      width: 100%;
+    }
+    img{
+      width: 100%;
+      max-height: 50vh;
+      object-fit: cover;
+    }
+  }
+  .contacts {
+    width: 100%;
+
+    .email {
+      width: 100%;
+      margin-right: 10px;
+      background-image: linear-gradient(180deg, #023b59, #147ab2);
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      margin-bottom: 15px;
+      text-decoration: none;
+    }
+
+
+    .instagram {
+      width: 100%;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: linear-gradient(180deg, #e1be04, #5e5004);
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      text-decoration: none;
+      margin-bottom: 30px;
+      img{
+        height: 70%;
+      }
+    }
+  }
+
+
+}
+
+
